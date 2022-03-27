@@ -1,0 +1,613 @@
+[INFO ] 2022-03-26 16:02:31.774 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 6084 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:02:31.843 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:02:32.232 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:02:32.245 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:02:32.260 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:02:35.508 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:02:35.655 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:02:37.334 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:02:38.329 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:02:38.385 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:02:38.396 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 6133 ms
+[INFO ] 2022-03-26 16:02:38.808 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:02:39.599 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:02:39.660 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:02:40.617 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:02:41.075 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:02:41.542 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:02:42.433 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:02:44.929 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:02:45.061 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:02:45.093 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:02:45.180 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:02:47.660 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:02:48.657 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:02:49.117 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33305869, org.springframework.security.web.context.SecurityContextPersistenceFilter@20635ece, org.springframework.security.web.header.HeaderWriterFilter@2ee18550, org.springframework.web.filter.CorsFilter@7e6a8dfe, org.springframework.security.web.authentication.logout.LogoutFilter@4a92c2a9, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@54152731, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@66315b52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36a5cb6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d0dd83e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57f3b4ed, org.springframework.security.web.session.SessionManagementFilter@726b5fb7, org.springframework.security.web.access.ExceptionTranslationFilter@695ef82c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d51953b]
+[INFO ] 2022-03-26 16:02:49.488 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:02:50.943 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:02:50.963 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:02:50.994 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:02:51.312 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:02:51.337 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 20.636 seconds (JVM running for 28.196)
+[INFO ] 2022-03-26 16:02:51.581 [RMI TCP Connection(2)-127.0.0.1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-03-26 16:02:51.585 [RMI TCP Connection(2)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-03-26 16:02:51.603 [RMI TCP Connection(2)-127.0.0.1] DispatcherServlet - Completed initialization in 17 ms
+[INFO ] 2022-03-26 16:08:07.503 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 12664 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:08:07.596 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:08:07.790 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:08:07.799 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:08:07.802 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:08:11.363 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:08:11.529 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:08:14.524 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:08:15.731 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:08:15.783 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:08:15.788 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 7979 ms
+[INFO ] 2022-03-26 16:08:16.085 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:08:16.591 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:08:16.607 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:08:17.419 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:08:17.810 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:08:18.728 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:08:19.196 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:08:21.551 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:08:21.578 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:08:21.608 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:08:21.739 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:08:24.636 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:08:25.024 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:08:25.344 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17b874eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@42103716, org.springframework.security.web.header.HeaderWriterFilter@423dc52c, org.springframework.web.filter.CorsFilter@59e0a026, org.springframework.security.web.authentication.logout.LogoutFilter@4a14987d, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@412720ad, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@6a163a8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@617bdb33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7506f8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3edd040e, org.springframework.security.web.session.SessionManagementFilter@f793ffa, org.springframework.security.web.access.ExceptionTranslationFilter@100f0dc3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11a3e078]
+[INFO ] 2022-03-26 16:08:25.625 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:08:26.999 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:08:27.016 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:08:27.039 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:08:27.186 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:08:27.197 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 20.363 seconds (JVM running for 24.441)
+[INFO ] 2022-03-26 16:10:39.777 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 9844 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:10:39.927 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:10:40.329 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:10:40.334 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:10:40.336 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:10:42.436 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:10:42.585 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:10:45.027 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:10:45.544 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:10:45.594 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:10:45.596 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 5257 ms
+[INFO ] 2022-03-26 16:10:45.831 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:10:46.269 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:10:46.285 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:10:47.090 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:10:47.378 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:10:48.107 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:10:48.709 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:10:50.965 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:10:51.013 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:10:51.034 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:10:51.247 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:10:54.194 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:10:54.722 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:10:55.755 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36e7a0b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@41f5be85, org.springframework.security.web.header.HeaderWriterFilter@5764cdc2, org.springframework.web.filter.CorsFilter@15b0ff0b, org.springframework.security.web.authentication.logout.LogoutFilter@13b1ef72, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@4a7b7ab1, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@6d4bafc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e2571a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f134c35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66a230b1, org.springframework.security.web.session.SessionManagementFilter@7506f8e, org.springframework.security.web.access.ExceptionTranslationFilter@4da21529, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59e0a026]
+[INFO ] 2022-03-26 16:10:56.458 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:10:58.056 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:10:58.074 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:10:58.118 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:10:58.606 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:10:58.703 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 20.141 seconds (JVM running for 24.378)
+[INFO ] 2022-03-26 16:12:14.898 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 5640 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:12:15.041 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:12:15.207 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:12:15.211 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:12:15.213 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:12:18.251 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:12:18.458 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:12:20.851 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:12:21.579 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:12:21.663 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:12:21.666 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 6449 ms
+[INFO ] 2022-03-26 16:12:21.988 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:12:22.672 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:12:22.692 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:12:24.462 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:12:24.838 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:12:25.616 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:12:26.362 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:12:29.464 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:12:29.525 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:12:29.555 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:12:29.793 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:12:31.899 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:12:32.190 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:12:32.503 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29f249f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a90ee0a, org.springframework.security.web.header.HeaderWriterFilter@6f44cf50, org.springframework.web.filter.CorsFilter@7eeae1, org.springframework.security.web.authentication.logout.LogoutFilter@61f3bdcc, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@219e6702, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@3c0e617f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ea09740, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2203d701, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@788428f, org.springframework.security.web.session.SessionManagementFilter@6814db66, org.springframework.security.web.access.ExceptionTranslationFilter@16ab5cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bf56619]
+[INFO ] 2022-03-26 16:12:32.743 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:12:36.346 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:12:36.368 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:12:36.396 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:12:36.581 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:12:36.588 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 22.705 seconds (JVM running for 27.949)
+[INFO ] 2022-03-26 16:15:04.841 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 13244 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:15:04.962 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:15:05.708 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:15:05.725 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:15:05.728 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:15:08.511 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:15:08.707 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:15:11.606 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:15:12.128 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:15:12.180 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:15:12.183 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 6453 ms
+[INFO ] 2022-03-26 16:15:12.452 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:15:12.927 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:15:12.944 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:15:13.837 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:15:14.137 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:15:14.847 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:15:15.662 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:15:17.790 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:15:17.854 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:15:17.875 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:15:17.962 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:15:22.072 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:15:22.383 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:15:22.836 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8365ce8, org.springframework.security.web.context.SecurityContextPersistenceFilter@54a4d2d5, org.springframework.security.web.header.HeaderWriterFilter@1aba4199, org.springframework.web.filter.CorsFilter@8fa169f, org.springframework.security.web.authentication.logout.LogoutFilter@5c728af9, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@1eb5b7e8, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@4f6c9195, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@427808d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@761bdbf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7587558c, org.springframework.security.web.session.SessionManagementFilter@7c306a77, org.springframework.security.web.access.ExceptionTranslationFilter@7dfa6e7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6aa539bd]
+[INFO ] 2022-03-26 16:15:23.072 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:15:25.059 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:15:25.092 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:15:25.119 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:15:25.416 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:15:25.535 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 21.701 seconds (JVM running for 27.116)
+[INFO ] 2022-03-26 16:15:35.409 [XNIO-1 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-03-26 16:15:35.416 [XNIO-1 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-03-26 16:15:35.506 [XNIO-1 task-1] DispatcherServlet - Completed initialization in 80 ms
+[INFO ] 2022-03-26 16:15:35.585 [XNIO-1 task-1] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:36.257 [XNIO-1 task-2] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:36.361 [XNIO-1 task-3] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:36.466 [XNIO-1 task-4] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:36.513 [XNIO-1 task-5] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:36.564 [XNIO-1 task-6] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:37.478 [XNIO-1 task-7] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:37.995 [XNIO-1 task-9] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:38.013 [XNIO-1 task-8] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:38.227 [XNIO-1 task-10] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:38.247 [XNIO-1 task-11] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:15:38.527 [XNIO-1 task-12] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 16:21:19.214 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 11112 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 16:21:19.389 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 16:21:19.624 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 16:21:19.627 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 16:21:19.630 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 16:21:22.991 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 16:21:23.190 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 174ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 16:21:27.726 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 16:21:28.369 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 16:21:28.434 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 16:21:28.436 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 8805 ms
+[INFO ] 2022-03-26 16:21:28.817 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 16:21:29.795 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 16:21:29.846 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 16:21:31.675 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 16:21:31.995 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 16:21:32.350 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 16:21:32.676 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 16:21:35.155 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 16:21:35.261 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 16:21:35.279 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 16:21:35.629 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 16:21:38.803 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 16:21:39.165 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 16:21:39.433 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fafd576, org.springframework.security.web.context.SecurityContextPersistenceFilter@610e184c, org.springframework.security.web.header.HeaderWriterFilter@174ecb34, org.springframework.web.filter.CorsFilter@4f0f4c09, org.springframework.security.web.authentication.logout.LogoutFilter@427cf2f0, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@5b37361b, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@2f6974de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@386da14a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fbe8f5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e3c1020, org.springframework.security.web.session.SessionManagementFilter@40e1201d, org.springframework.security.web.access.ExceptionTranslationFilter@19ba784c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7be1168c]
+[INFO ] 2022-03-26 16:21:40.423 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 16:21:42.510 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 16:21:42.534 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 16:21:42.565 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 16:21:42.795 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 16:21:42.805 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 24.619 seconds (JVM running for 29.613)
+[WARN ] 2022-03-26 18:25:49.778 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m48s680ms897µs400ns).
+[INFO ] 2022-03-26 18:27:36.960 [XNIO-1 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-03-26 18:27:37.044 [XNIO-1 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-03-26 18:27:37.463 [XNIO-1 task-1] DispatcherServlet - Completed initialization in 414 ms
+[INFO ] 2022-03-26 18:27:37.619 [XNIO-1 task-1] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:38.071 [XNIO-1 task-2] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:38.078 [XNIO-1 task-3] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:38.086 [XNIO-1 task-4] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:38.201 [XNIO-1 task-5] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:39.420 [XNIO-1 task-6] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:40.145 [XNIO-1 task-7] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:40.768 [XNIO-1 task-8] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:41.250 [XNIO-1 task-9] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:41.274 [XNIO-1 task-10] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:27:41.460 [XNIO-1 task-11] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:15.606 [XNIO-1 task-12] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.255 [XNIO-1 task-16] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.259 [XNIO-1 task-15] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.260 [XNIO-1 task-14] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.254 [XNIO-1 task-13] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.294 [XNIO-1 task-17] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.666 [XNIO-1 task-18] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:16.994 [XNIO-1 task-19] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:17.190 [XNIO-1 task-20] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:17.230 [XNIO-1 task-21] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:17.541 [XNIO-1 task-22] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:28.130 [XNIO-1 task-23] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:28.174 [XNIO-1 task-23] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:29.077 [XNIO-1 task-24] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:29.086 [XNIO-1 task-24] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:29.588 [XNIO-1 task-25] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:29.594 [XNIO-1 task-25] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:29.855 [XNIO-1 task-26] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:29.861 [XNIO-1 task-26] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:30.063 [XNIO-1 task-27] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:30.074 [XNIO-1 task-27] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:30.383 [XNIO-1 task-28] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:30.389 [XNIO-1 task-28] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:43.323 [XNIO-1 task-29] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:43.339 [XNIO-1 task-29] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:43.537 [XNIO-1 task-30] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:43.547 [XNIO-1 task-30] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:43.711 [XNIO-1 task-31] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:43.715 [XNIO-1 task-31] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:43.931 [XNIO-1 task-32] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:43.938 [XNIO-1 task-32] ClienteController - OKOK
+[INFO ] 2022-03-26 18:39:44.117 [XNIO-1 task-1] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:39:44.121 [XNIO-1 task-1] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.008 [XNIO-1 task-2] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.195 [XNIO-1 task-2] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.227 [XNIO-1 task-3] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.232 [XNIO-1 task-3] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.243 [XNIO-1 task-4] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.247 [XNIO-1 task-4] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.262 [XNIO-1 task-5] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.278 [XNIO-1 task-5] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.419 [XNIO-1 task-6] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.479 [XNIO-1 task-6] ClienteController - OKOK
+[INFO ] 2022-03-26 18:41:48.833 [XNIO-1 task-7] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:41:48.858 [XNIO-1 task-7] ClienteController - OKOK
+[INFO ] 2022-03-26 18:55:49.423 [XNIO-1 task-8] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:49.780 [XNIO-1 task-9] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:49.781 [XNIO-1 task-8] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:49.783 [XNIO-1 task-10] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:49.899 [XNIO-1 task-15] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:49.916 [XNIO-1 task-13] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:50.338 [XNIO-1 task-17] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:50.534 [XNIO-1 task-16] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:51.110 [XNIO-1 task-12] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:51.140 [XNIO-1 task-14] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:55:51.341 [XNIO-1 task-18] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 18:58:55.525 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 19828 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 18:58:55.581 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 18:58:55.842 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 18:58:55.845 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 18:58:55.846 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 18:58:59.620 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 18:58:59.759 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 18:59:02.153 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 18:59:02.886 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 18:59:02.945 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 18:59:02.947 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 7099 ms
+[INFO ] 2022-03-26 18:59:03.297 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 18:59:03.962 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 18:59:03.991 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 18:59:04.630 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 18:59:04.815 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 18:59:05.148 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 18:59:05.429 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 18:59:08.738 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 18:59:08.866 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 18:59:08.947 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 18:59:09.190 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 18:59:13.211 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 18:59:13.635 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 18:59:14.129 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a4d5ccf, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c52e173, org.springframework.security.web.header.HeaderWriterFilter@3fe2d37, org.springframework.web.filter.CorsFilter@1019ce66, org.springframework.security.web.authentication.logout.LogoutFilter@60894ece, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@13c4269e, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@107b3e31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@624d3edd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7753646a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4000a3d5, org.springframework.security.web.session.SessionManagementFilter@57c08291, org.springframework.security.web.access.ExceptionTranslationFilter@731ab027, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fc61008]
+[INFO ] 2022-03-26 18:59:14.448 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 18:59:16.145 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 18:59:16.169 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 18:59:16.204 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 18:59:16.372 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 18:59:16.378 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 21.65 seconds (JVM running for 26.415)
+[INFO ] 2022-03-26 19:03:20.309 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 19356 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 19:03:20.402 [restartedMain] WdmServicosIntApplication - The following profiles are active: sva,devx
+[INFO ] 2022-03-26 19:03:20.608 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 19:03:20.613 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 19:03:20.617 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 19:03:23.606 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 19:03:23.975 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 331ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 19:03:27.347 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 19:03:28.614 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 19:03:28.765 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 19:03:28.769 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 8148 ms
+[INFO ] 2022-03-26 19:03:29.323 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 19:03:30.244 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 19:03:30.277 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 19:03:31.527 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 19:03:31.812 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 19:03:32.308 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 19:03:32.618 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 19:03:36.350 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 19:03:36.381 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 19:03:36.414 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:03:36.587 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-03-26 19:03:38.177 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autencicacaoController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autenticacaoService': Unsatisfied dependency expressed through field 'emailService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'mailSender'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.MailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO ] 2022-03-26 19:03:38.179 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:03:38.180 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[ERROR] 2022-03-26 19:03:38.188 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_cliente if exists
+[ERROR] 2022-03-26 19:03:38.195 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_equipamento if exists
+[WARN ] 2022-03-26 19:03:38.503 [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-210]
+[INFO ] 2022-03-26 19:03:38.504 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-03-26 19:03:38.607 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-03-26 19:03:38.651 [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-03-26 19:03:40.151 [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mailSender in br.com.tcc.wdmdominio.service.SmtpEmailService required a bean of type 'org.springframework.mail.MailSender' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.mail.MailSender' in your configuration.
+
+[INFO ] 2022-03-26 19:04:07.511 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 3840 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 19:04:07.628 [restartedMain] WdmServicosIntApplication - The following profiles are active: sva,devx
+[INFO ] 2022-03-26 19:04:07.802 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 19:04:07.810 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 19:04:07.810 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 19:04:11.707 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 19:04:11.947 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 201ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 19:04:14.338 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 19:04:15.291 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 19:04:15.331 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 19:04:15.333 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 7520 ms
+[INFO ] 2022-03-26 19:04:15.543 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 19:04:15.995 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 19:04:16.011 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 19:04:16.525 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 19:04:16.686 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 19:04:17.163 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 19:04:17.468 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 19:04:21.403 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 19:04:21.432 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 19:04:21.453 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:04:21.660 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-03-26 19:04:23.153 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autencicacaoController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autenticacaoService': Unsatisfied dependency expressed through field 'emailService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'mailSender'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.MailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO ] 2022-03-26 19:04:23.156 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:04:23.158 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[ERROR] 2022-03-26 19:04:23.165 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_cliente if exists
+[ERROR] 2022-03-26 19:04:23.193 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_equipamento if exists
+[WARN ] 2022-03-26 19:04:23.454 [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-210]
+[INFO ] 2022-03-26 19:04:23.456 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-03-26 19:04:23.481 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-03-26 19:04:23.506 [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-03-26 19:04:24.282 [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mailSender in br.com.tcc.wdmdominio.service.SmtpEmailService required a bean of type 'org.springframework.mail.MailSender' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.mail.MailSender' in your configuration.
+
+[INFO ] 2022-03-26 19:06:56.100 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 17164 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 19:06:56.286 [restartedMain] WdmServicosIntApplication - The following profiles are active: sva,devx
+[INFO ] 2022-03-26 19:06:56.769 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 19:06:56.782 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 19:06:56.783 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 19:07:03.269 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 19:07:03.495 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 203ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 19:07:06.784 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 19:07:07.401 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 19:07:07.447 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 19:07:07.449 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 10664 ms
+[INFO ] 2022-03-26 19:07:07.773 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 19:07:08.289 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 19:07:08.311 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 19:07:09.579 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 19:07:09.930 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 19:07:10.598 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 19:07:11.054 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 19:07:13.535 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 19:07:13.708 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 19:07:13.733 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:07:13.956 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2022-03-26 19:07:16.532 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autencicacaoController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autenticacaoService': Unsatisfied dependency expressed through field 'emailService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'mailSender'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.MailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO ] 2022-03-26 19:07:16.536 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:07:16.539 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[ERROR] 2022-03-26 19:07:16.569 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_cliente if exists
+[ERROR] 2022-03-26 19:07:16.580 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: drop table tbl_equipamento if exists
+[WARN ] 2022-03-26 19:07:16.800 [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-210]
+[INFO ] 2022-03-26 19:07:16.808 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-03-26 19:07:16.831 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-03-26 19:07:16.856 [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-03-26 19:07:17.293 [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mailSender in br.com.tcc.wdmdominio.service.SmtpEmailService required a bean of type 'org.springframework.mail.MailSender' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.mail.MailSender' in your configuration.
+
+[INFO ] 2022-03-26 19:07:57.599 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication on DESKTOP-2HAU8J1 with PID 17068 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 19:07:57.675 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 19:07:57.906 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\wsilv\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/wsilv/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+[INFO ] 2022-03-26 19:07:57.912 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 19:07:57.914 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 19:08:01.381 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 19:08:01.533 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124ms. Found 3 JPA repository interfaces.
+[INFO ] 2022-03-26 19:08:03.624 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WARN ] 2022-03-26 19:08:04.610 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 19:08:04.748 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 19:08:04.751 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 6835 ms
+[INFO ] 2022-03-26 19:08:05.168 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 19:08:05.970 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 19:08:05.991 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 19:08:07.254 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 19:08:07.424 [restartedMain] Version - HHH000412: Hibernate Core {5.4.9.Final}
+[INFO ] 2022-03-26 19:08:07.797 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[INFO ] 2022-03-26 19:08:08.139 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 19:08:11.554 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 19:08:11.591 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 19:08:11.633 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:08:11.930 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 19:08:15.164 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 19:08:15.710 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 19:08:16.220 [restartedMain] DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@254c3431, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f5c00e6, org.springframework.security.web.header.HeaderWriterFilter@8f4a864, org.springframework.web.filter.CorsFilter@4f0ed5ca, org.springframework.security.web.authentication.logout.LogoutFilter@60da82a1, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@1a3d9d15, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@4237486, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2710229e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e28fee4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@400a258f, org.springframework.security.web.session.SessionManagementFilter@21e1cd11, org.springframework.security.web.access.ExceptionTranslationFilter@467195e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50c4fbc2]
+[INFO ] 2022-03-26 19:08:16.679 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 19:08:19.117 [restartedMain] undertow - starting server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 19:08:19.147 [restartedMain] xnio - XNIO version 3.3.8.Final
+[INFO ] 2022-03-26 19:08:19.219 [restartedMain] nio - XNIO NIO Implementation Version 3.3.8.Final
+[INFO ] 2022-03-26 19:08:19.471 [restartedMain] UndertowServletWebServer - Undertow started on port(s) 8080 (http) with context path ''
+[INFO ] 2022-03-26 19:08:19.491 [restartedMain] WdmServicosIntApplication - Started WdmServicosIntApplication in 22.773 seconds (JVM running for 27.567)
+[INFO ] 2022-03-26 19:09:03.308 [XNIO-1 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-03-26 19:09:03.358 [XNIO-1 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2022-03-26 19:09:04.834 [XNIO-1 task-1] DispatcherServlet - Completed initialization in 1459 ms
+[INFO ] 2022-03-26 19:09:05.093 [XNIO-1 task-1] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:05.587 [XNIO-1 task-2] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:05.614 [XNIO-1 task-3] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:05.628 [XNIO-1 task-4] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:05.647 [XNIO-1 task-6] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:05.640 [XNIO-1 task-5] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:06.272 [XNIO-1 task-7] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:06.593 [XNIO-1 task-8] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:07.353 [XNIO-1 task-9] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:07.466 [XNIO-1 task-10] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:07.763 [XNIO-1 task-11] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:15.994 [XNIO-1 task-12] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:16.617 [XNIO-1 task-13] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:43.415 [XNIO-1 task-14] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:09:43.863 [XNIO-1 task-15] JWTAuthorizationFilter - [JWTAuthorizationFilter]-[doFilterInternal]
+[INFO ] 2022-03-26 19:12:37.287 [Thread-5] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2022-03-26 19:12:38.045 [Thread-5] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 19:12:38.192 [Thread-5] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[ERROR] 2022-03-26 19:12:38.470 [Thread-5] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: 
+    drop table tbl_cliente if exists
+[ERROR] 2022-03-26 19:12:38.589 [Thread-5] SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: 
+    drop table tbl_equipamento if exists
+[WARN ] 2022-03-26 19:12:38.936 [Thread-5] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-210]
+[INFO ] 2022-03-26 19:12:38.950 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-03-26 19:12:39.146 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-03-26 19:12:39.338 [Thread-5] servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2022-03-26 19:12:39.521 [Thread-5] undertow - stopping server: Undertow - 2.0.28.Final
+[INFO ] 2022-03-26 20:29:10.092 [restartedMain] WdmServicosIntApplication - Starting WdmServicosIntApplication using Java 11.0.11 on DESKTOP-2HAU8J1 with PID 12800 (D:\ws_fliperama\fliperama_back\wdm-servicos-int\target\classes started by wsilv in d:\ws_fliperama\fliperama_back\wdm-servicos-int)
+[INFO ] 2022-03-26 20:29:10.173 [restartedMain] WdmServicosIntApplication - The following profiles are active: dev
+[INFO ] 2022-03-26 20:29:10.585 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2022-03-26 20:29:10.588 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2022-03-26 20:29:15.818 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2022-03-26 20:29:16.004 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 3 JPA repository interfaces.
+[WARN ] 2022-03-26 20:29:18.953 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2022-03-26 20:29:19.037 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-03-26 20:29:19.039 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8449 ms
+[INFO ] 2022-03-26 20:29:19.353 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2022-03-26 20:29:20.137 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2022-03-26 20:29:20.221 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[INFO ] 2022-03-26 20:29:21.245 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2022-03-26 20:29:21.490 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+[INFO ] 2022-03-26 20:29:22.046 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2022-03-26 20:29:22.430 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2022-03-26 20:29:28.005 [restartedMain] SchemaCreatorImpl - HHH000476: Executing import script 'file:/D:/ws_fliperama/fliperama_back/wdm-servicos-int/target/classes/import.sql'
+[INFO ] 2022-03-26 20:29:28.212 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2022-03-26 20:29:28.267 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 20:29:31.856 [restartedMain] EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+[INFO ] 2022-03-26 20:29:32.136 [restartedMain] SecurityConfig - [SecurityConfig]-[configure]
+[INFO ] 2022-03-26 20:29:32.452 [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49f11815, org.springframework.security.web.context.SecurityContextPersistenceFilter@c823282, org.springframework.security.web.header.HeaderWriterFilter@7cf46709, org.springframework.web.filter.CorsFilter@5c9babee, org.springframework.security.web.authentication.logout.LogoutFilter@30201881, br.com.tcc.wdmservicosint.security.JWTAuthenticationFilter@6d73a28b, br.com.tcc.wdmservicosint.security.JWTAuthorizationFilter@6995d0a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72a0e16f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d26002c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28655c37, org.springframework.security.web.session.SessionManagementFilter@58f92be, org.springframework.security.web.access.ExceptionTranslationFilter@11dd30b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@596180af]
+[INFO ] 2022-03-26 20:29:32.818 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2022-03-26 20:29:34.188 [restartedMain] undertow - starting server: Undertow - 2.2.12.Final
+[INFO ] 2022-03-26 20:29:34.223 [restartedMain] xnio - XNIO version 3.8.4.Final
+[INFO ] 2022-03-26 20:29:34.301 [restartedMain] nio - XNIO NIO Implementation Version 3.8.4.Final
+[INFO ] 2022-03-26 20:29:34.469 [restartedMain] threads - JBoss Threads version 3.1.0.Final
+[INFO ] 2022-03-26 20:29:34.609 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[WARN ] 2022-03-26 20:29:34.923 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+[INFO ] 2022-03-26 20:29:34.941 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2022-03-26 20:29:34.949 [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[WARN ] 2022-03-26 20:29:35.251 [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-210]
+[INFO ] 2022-03-26 20:29:35.257 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2022-03-26 20:29:35.276 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2022-03-26 20:29:35.292 [restartedMain] undertow - stopping server: Undertow - 2.2.12.Final
+[INFO ] 2022-03-26 20:29:35.375 [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-03-26 20:29:35.473 [restartedMain] SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.13.jar:5.3.13]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.0.jar:2.6.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) [spring-boot-2.6.0.jar:2.6.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.6.0.jar:2.6.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) [spring-boot-2.6.0.jar:2.6.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.0.jar:2.6.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) [spring-boot-2.6.0.jar:2.6.0]
+	at br.com.tcc.wdmservicosint.WdmServicosIntApplication.main(WdmServicosIntApplication.java:16) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.0.jar:2.6.0]
+Caused by: java.lang.NullPointerException
+	at springfox.documentation.spring.web.WebMvcPatternsRequestConditionWrapper.getPatterns(WebMvcPatternsRequestConditionWrapper.java:56) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
+	at springfox.documentation.RequestHandler.sortedPaths(RequestHandler.java:113) ~[springfox-core-3.0.0.jar:3.0.0]
+	at springfox.documentation.spi.service.contexts.Orderings.lambda$byPatternsCondition$3(Orderings.java:89) ~[springfox-spi-3.0.0.jar:3.0.0]
+	at java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469) ~[?:?]
+	at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355) ~[?:?]
+	at java.util.TimSort.sort(TimSort.java:220) ~[?:?]
+	at java.util.Arrays.sort(Arrays.java:1515) ~[?:?]
+	at java.util.ArrayList.sort(ArrayList.java:1750) ~[?:?]
+	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:392) ~[?:?]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[?:?]
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:81) ~[springfox-spring-webmvc-3.0.0.jar:3.0.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[?:?]
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.withDefaults(AbstractDocumentationPluginsBootstrapper.java:107) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.buildContext(AbstractDocumentationPluginsBootstrapper.java:91) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100) ~[springfox-spring-web-3.0.0.jar:3.0.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.13.jar:5.3.13]
+	... 19 more
