@@ -34,7 +34,7 @@
 		<repository>
 			<id>tms-releases</id>
 			<name>tms-releases</name>
-			<url>http://localhost:8081/artifactory/tms-releases-local</url>
+			<url>http://localhost:8081/repository/maven-releases</url>
 			<layout>default</layout>
 			<uniqueVersion>true</uniqueVersion>
 		</repository>
